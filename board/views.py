@@ -3,6 +3,6 @@ from .serializers import BoardSerializer
 from .models import Board
 
 
-class BoardList(generics.ListCreateAPIView):
+class BoardListAPI(generics.ListCreateAPIView):
     queryset = Board.objects.all()
     serializer_class = BoardSerializer
